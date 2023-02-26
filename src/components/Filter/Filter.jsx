@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getFilter } from '../../redux/filter/filter-selectors';
 import { setFilter } from '../../redux/filter/filter-slice';
 
-const Filter = ({ onChange }) => {
+const Filter = () => {
   const filter = useSelector(getFilter);
   const dispatch = useDispatch();
   const changeFilter = ({ target }) => {
